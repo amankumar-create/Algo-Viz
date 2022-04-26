@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div id="grid">
+
+    </div>
+
+
+    <div id="btmnav" class="navbar">
+        <button type="button" class="btn btn-primary" id="find">find path</button>
+        <button type="button" class="btn btn-primary" id="create_maze">Create Maze</button>
+
+        <div class="dropup">
+            <button id="dropBtn" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose
+                Algorithm
+                <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <p id="a1" onmouseover="document.getElementById('a1').style.backgroundColor= 'rgb(133, 133, 138' "
+                    onmouseout="document.getElementById('a1').style.backgroundColor= 'white'">
+                    Breadth first search</p>
+                <p id="a2" onmouseover="document.getElementById('a2').style.backgroundColor= 'rgb(133, 133, 138'"
+                    onmouseout="document.getElementById('a2').style.backgroundColor= 'white'">Dijkstra's Algorithm</p>
+            </ul>
+        </div>
+    </div>
+    <script src="canvas.js"></script>
+    <script src="queue_ds.js"></script>
+    <script src="bfs.js"></script>
+    <script src="dijkstras_algo.js"></script>
+    <script src="maze.js"></script>
+
+
+</body>
+
+</html>

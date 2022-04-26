@@ -1,0 +1,86 @@
+ 
+#btmnav{
+  background-color: #333;
+  position: fixed;
+  bottom :0;
+  width: 100%;
+  height: fit-content;  
+}
+#grid{
+	margin: 0 auto;
+	cursor: cell;
+}
+.cell{
+	width: 15px;
+	height: 15px;
+	background-color:  #ffffff;
+  
+}
+.visitedcell{
+  width: 15px;
+	height: 15px;
+	background-color: #4fffe8;
+	animation-name: example;
+  animation-duration: 0.2s;
+  border-radius: 0px;
+
+}
+.boundaryvisitedcell{
+  width: 15px;
+	 height: 15px;
+	background-color: #87f5ff;
+	
+	animation-name: example;
+  animation-duration: 0.1s;
+  border-radius: 6px;
+
+}
+.pathcell{
+  width: 15px;
+	 height: 15px;
+	background-color: #fff236;
+	animation-name: example;
+  animation-duration: 0.05s;
+  border-radius: 0px;
+}
+.startingcell{
+  width: 15px;
+	height: 15px;
+	background-image: url("start.png");
+	background-size:100% 100%;
+ 
+	 
+}
+.destinationcell{
+  width: 15px;
+	 height: 15px;
+	background-image: url("end.png");
+	background-size:100% 100%;
+	 
+ 
+}
+#obstacle{
+	 width: 15px;
+	 height: 15px;
+	background-color: #000000;
+	 
+}
+@keyframes example {
+  from {border-radius: 8px; background-color: #6666ff;}
+  to {border-radius: 0px; background-color: #4fffe8;}
+}
+@keyframes obsdraw {
+  from {border-radius:  8px; background-color: 	#ff00ff;}
+  to {border-radius: 0px; background-color: 	#bf00ff;}
+}
+#no_path{
+	width: 400px;
+	height: 300px;
+	font-size: 36px;
+	font-family: "monospace";
+	color: #A52A2A;
+	z-index: 9;
+}
+.dropdown-menu{
+	cursor: pointer;
+ }
